@@ -18,7 +18,8 @@ import { MongoClient } from 'mongodb';
 import * as dotenv from 'dotenv';
 dotenv.config()
 const app = express()
-const PORT = 5000
+// const PORT = 3000
+const PORT = process.env.PORT
 
 console.log(process.env.MONGO_URL)
 // inbuilt middleare
